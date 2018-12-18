@@ -1,13 +1,23 @@
 #timeline {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#lastName {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .lastLetter {
-    position: relative;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
     font-size: 50px;
-
+    position: relative;
+    display: inline-block;
 }
 
 .square {
@@ -20,16 +30,15 @@
     font-size: 70px;
     background-color: #111116;
     border: 1px solid;
-    display: inline-block;
 }
 
 .line {
-    display: inline-block;
+    display: block;
 }
 
 html,
 body,
 header {
     background-color: #111116;
-    font-family: Helvetica 
+    font-family: 'Thasadith', sans-serif;
 }

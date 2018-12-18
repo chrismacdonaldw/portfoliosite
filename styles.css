@@ -1,11 +1,23 @@
+#timeline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.lastLetter {
+    position: relative;
+    font-size: 50px;
+
+}
+
 .square {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     margin: 9px;
     text-align: center;
     vertical-align: middle;
-    line-height: 50px;
-    font-size: 35px;
+    line-height: 80px;
+    font-size: 70px;
     background-color: #111116;
     border: 1px solid;
     display: inline-block;

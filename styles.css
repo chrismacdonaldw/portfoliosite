@@ -1,0 +1,22 @@
+.large {
+    height: 50px;
+    width: 50px;
+}
+
+.square {
+    margin: 9px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 35px;
+    background-color: #111116;
+    border: 1px solid;
+    display: inline-block;
+}
+
+html,
+body,
+header {
+    background-color: #111116;
+    font-family: Helvetica 
+}

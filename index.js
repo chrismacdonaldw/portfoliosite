@@ -132,4 +132,9 @@ $('.square').fadeIn('slow', function() {
         opacity: 1,
         duration: 2000
     })
+    .add({
+        targets: '#boxes .box',
+        scale: 3,
+        opacity: 1
+    })
 });

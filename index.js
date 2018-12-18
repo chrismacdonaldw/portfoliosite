@@ -1,20 +1,10 @@
-// Name provided
-var provided = [ // Chris MacDonald
-    { letter: 'i', order: 3  },
-    { letter: 'l', order: 13 },
-    { letter: 'C', order: 0  },
-    { letter: 'D', order: 9  },
-    { letter: 'a', order: 12 },
-    { letter: 'o', order: 10 },
-    { letter: 'd', order: 14 },
-    { letter: 'r', order: 2  },
-    { letter: 'n', order: 11 },
-    { letter: 'h', order: 1  },
-    { letter: 'c', order: 8  },
-    { letter: 'a', order: 7  },
-    { letter: 's', order: 4  },
-    { letter: ' ', order: 5  },
-    { letter: 'M', order: 6  },
+// Name prov
+var prov = [ // Chris
+    { letter: 'h', order: 'o1'  },
+    { letter: 'r', order: 'o2'  },
+    { letter: 'C', order: 'o0'  },
+    { letter: 'i', order: 'o3'  },
+    { letter: 's', order: 'o4'  },
 ];
 
 // Colors to set squares and letters
@@ -27,28 +17,39 @@ var colors = [
 ]
 
 var timeline = document.getElementById('timeline');
-var size = provided.length;
+var size = prov.length;
 
 for (var i = 0; i < size; i++) {
 
     // Create square with letter inside
+    var line = document.createElement('div'); line.className = 'line';
     var square = document.createElement('div');
-    var letter = document.createTextNode(provided[i]['letter']);
-    square.classList.add('large', 'square', i, provided[i]['order'])
+    var letter = document.createTextNode(prov[i]['letter']);
+    square.classList.add('square', prov[i]['order'])
     square.appendChild(letter);
 
-    // Get random color for square
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    square.style.color = color;
-    square.style.borderColor = color;
+    square.style.color = colors[i];
+    square.style.borderColor = colors[i];
+
+    // Append square to line
+    line.appendChild(square);
 
     // Append DOM
-    var selector = '.large.square.' + i + '.' + provided[i]['order'];
-    timeline.appendChild(square);
+    var selector = '.square.' + prov[i]['order'];
+    timeline.appendChild(line);
     $(selector).hide();
 }
 
 // Fade in, when complete, sort
-$('.large.square').fadeIn('slow', function() {
-    
-});
+$('.square').fadeIn('slow');
+
+var sortTimeline = anime.timeline();
+
+    sortTimeline.add({
+        targets: '#timeline .square.o3',
+        translateY: 100
+    })
+    .add({
+        targets: '#timeline .square.o0',
+        translateY: 200
+    })

@@ -1,9 +1,6 @@
-.large {
+.square {
     height: 50px;
     width: 50px;
-}
-
-.square {
     margin: 9px;
     text-align: center;
     vertical-align: middle;
@@ -11,6 +8,10 @@
     font-size: 35px;
     background-color: #111116;
     border: 1px solid;
+    display: inline-block;
+}
+
+.line {
     display: inline-block;
 }
 

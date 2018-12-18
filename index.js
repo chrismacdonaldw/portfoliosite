@@ -28,7 +28,6 @@ var colors = [
 
 var timeline = document.getElementById('timeline');
 var size = provided.length;
-console.log(size);
 
 for (var i = 0; i < size; i++) {
 
@@ -44,6 +43,12 @@ for (var i = 0; i < size; i++) {
     square.style.borderColor = color;
 
     // Append DOM
+    var selector = '.large.square.' + i + '.' + provided[i]['order'];
     timeline.appendChild(square);
-    console.log('appended child');
+    $(selector).hide();
 }
+
+// Fade in, when complete, sort
+$('.large.square').fadeIn('slow', function() {
+    
+});

@@ -161,4 +161,14 @@ $('.square').fadeIn('slow', function() {
             });
         }
     });
+
+    $('.box.github').click(function() {
+
+    });
+    $('.box.email').click(function() {
+        
+    });
+    $('.box.work').click(function() {
+        
+    });
 });

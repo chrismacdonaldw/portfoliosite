@@ -39,13 +39,14 @@
     line-height: 2.5em;
     background-color: #111116;
     border: 0.0625em solid;
-    margin: 15em;
+    margin: 10em;
     color: #373748;
     border-color: #373748;
     border-radius: 0.5em;
     height: 2.5em;
-    width: 10%;
+    width: 5em;
     display: inline-block;
+    position: static;
 }
 
 .line {
@@ -57,4 +58,5 @@ body,
 header {
     background-color: #111116;
     font-family: 'Thasadith', sans-serif;
+    overflow: hidden;
 }

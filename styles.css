@@ -20,6 +20,12 @@
     display: inline-block;
 }
 
+.form.github {
+    opacity: 0;
+    height: 100%;
+    width: 30
+}
+
 .square {
     height: 80px;
     width: 80px;

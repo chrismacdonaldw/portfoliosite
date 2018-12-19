@@ -137,6 +137,10 @@ $('.square').fadeIn('slow', function() {
         scale: 3,
         opacity: 1
     })
+    .add({
+        targets: '.form.work',
+        translateX: 300
+    })
 
     // Expand box size when selected
     $('.box').on({
@@ -161,14 +165,14 @@ $('.square').fadeIn('slow', function() {
             });
         }
     });
+});
 
-    $('.box.github').click(function() {
-
-    });
-    $('.box.email').click(function() {
-        
-    });
-    $('.box.work').click(function() {
-        
-    });
+$('.box.github').click(function() {
+    var win = window.open('https://github.com/chrismacdonaldw', '_blank');
+});
+$('.box.email').click(function() {
+    
+});
+$('.box.work').click(function() {
+    
 });

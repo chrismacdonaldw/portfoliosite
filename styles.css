@@ -15,7 +15,7 @@
     opacity: 0;
     text-align: center;
     vertical-align: middle;
-    font-size: 50px;
+    font-size: 3.125em;
     position: relative;
     display: inline-block;
 }
@@ -27,7 +27,7 @@
     text-align: center;
     vertical-align: middle;
     line-height: 80px;
-    font-size: 70px;
+    font-size: 4.375em;
     background-color: #111116;
     border: 1px solid;
 }
@@ -36,15 +36,15 @@
     opacity: 0;
     text-align: center;
     vertical-align: middle;
-    line-height: 40px;
+    line-height: 2.5em;
     background-color: #111116;
-    border: 1px solid;
-    margin: 10em;
+    border: 0.0625em solid;
+    margin: 15em;
     color: #373748;
     border-color: #373748;
     border-radius: 0.5em;
-    height: 40px;
-    width: 5%;
+    height: 2.5em;
+    width: 10%;
     display: inline-block;
 }
 

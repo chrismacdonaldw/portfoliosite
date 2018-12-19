@@ -137,4 +137,28 @@ $('.square').fadeIn('slow', function() {
         scale: 3,
         opacity: 1
     })
+
+    // Expand box size when selected
+    $('.box').on({
+        mouseenter: function(e) {
+            var color = colors[Math.floor(Math.random() * colors.length)];
+            var setbox = $(e.target).attr('class');
+            setbox = setbox.replace(/ /g, '.');
+            anime({
+                targets: '.' + setbox,
+                scale: 3.5,
+                borderColor: color
+            });
+        },
+        mouseleave: function(e) {
+            var setbox = $(e.target).attr('class');
+            setbox = setbox.replace(/ /g, '.');
+            console.log(setbox);
+            anime({
+                targets: '.' + setbox,
+                borderColor: '#373748',
+                scale: 3
+            });
+        }
+    });
 });
